@@ -1,13 +1,12 @@
 package Ejercicios;
 import java.util.Scanner;
-import java.util.Arrays;
 
 
 public class Para_Practicar {
 	public static void main(String[] args) {
 		System.out.println("--REPASO ARRAYS, CONDICIONALES, BUCLES, MATRICES.....--");
 		Scanner lector = new Scanner(System.in);
-		
+		/*
 		// Ejercicio 1
 		System.out.println("--EJERCICIO 1: PARES O IMPARES--");
 		int pares =0;
@@ -114,7 +113,37 @@ public class Para_Practicar {
 		
 		System.out.println(Arrays.deepToString(matrizSuma));
 		System.out.println("\n--------------------------------------------------------------------------\n");
+		*/
 		
+		System.out.println("--EJERCICIO 6: cálculo productos Almacén--");
+		// 1. Declaración de la matriz 3x4 (Pisos x Estanterías)
+        int[][] stockAlmacen = new int[3][4];
+        int stockTotal = 0;
+        int stockPisoCentral = 0;
+        int stockEstanteria3 = 0;
+        // 2. Rellenar la matriz y calcular el stock total
+        for (int i = 0; i < 3; i++) { // Bucle para los pisos (filas)
+            for (int j = 0; j < 4; j++) { // Bucle para las estanterías (columnas)
+                // Rellenar con stock aleatorio (entre 10 y 50)
+                stockAlmacen[i][j] = (int) (Math.random() * 41 + 10); 
+                stockTotal += stockAlmacen[i][j];
+                if (i == 1) {
+                	stockPisoCentral += stockAlmacen[i][j];
+				}
+                if (j == 2) {
+					stockEstanteria3 += stockAlmacen[i][j];	
+                }
+            }
+        }
+        
+        // 3. Mostrar stock total
+        System.out.println("--- Informe de Inventario ---");
+        System.out.println("Stock Total en el almacén: " + stockTotal + " unidades.");
+        System.out.println("Stock Total en el piso central: " + stockPisoCentral + " unidades.");
+        System.out.println("Stock Total en la estantería 3: " + stockEstanteria3 + " unidades.");
+        
+		System.out.println("\n--------------------------------------------------------------------------\n");
+        
 		lector.close();
 	}
 }
