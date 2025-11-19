@@ -123,7 +123,66 @@ public class Condicional_if_else {
 		} else if (notaExamen >= 9 && notaExamen <= 10) {
 			System.out.println("Sobresaliente");
 		}
-		 
+		
+		System.out.println("\n---------------------------------------------\n");
+		// Ejemplo 8: Cálculo de la renta
+		
+		float c = 1000F; //capital
+        float r = 0; // redito
+        int t = 50; // tiempo
+
+        if (t <= 24) {
+            r = 5;
+        } else if (t <= 60 && t > 24) {
+            r = 8;
+        } else {
+            r = 10;
+        }
+        System.out.println("La renta es: " + (c + (c * r * t / 1200)));
+        System.out.println("\n---------------------------------------------\n");
+        
+        
+        // Ejemplo 9: múltiplo de 3 y par o impar
+        int number = 15;
+        if (number % 2 == 0 && number % 3 == 0) {
+            System.out.println("Es par y multiplo de 3");
+        } else if (number % 2 == 1 && number % 3 == 0) {
+            System.out.println("Es impar y multiplo de 3");
+        } else if (number % 3 == 1 && number % 2 == 1) {
+            System.out.println("Ni es par ni multiplo de 3");
+        }
+        
+        System.out.println("\n---------------------------------------------\n");
+        // Ejemplo 10: Cálculo de sueldo con incrementos
+        int sueldo_antiguo = 1500;
+        String sexo = "mujer";
+        int hijos = 5;
+        int sueldo = 0;
+        if (sueldo < 15000) {
+            sueldo = sueldo_antiguo + (sueldo_antiguo * 15) / 100;
+            System.out.println("Sueldo antiguo: " + sueldo_antiguo + " Sueldo nuevo, es un 15% mas: " + sueldo);
+            if ("mujer".equals(sexo)) {
+                sueldo = sueldo + (sueldo * 2) / 100;
+                System.out.println("Tiene mas subida por ser mujer: " + sueldo);
+                if (hijos > 0) {
+                    sueldo = sueldo + (sueldo * hijos) / 100;
+                    System.out.println("Tiene mas subida por tener " + hijos + " hijos: " + sueldo);
+                }
+            }
+        } else {
+            sueldo = sueldo_antiguo + (sueldo_antiguo * 12) / 100;
+            System.out.println("Sueldo antiguo: " + sueldo_antiguo + " Sueldo nuevo, es un 12% mas: " + sueldo);
+            if ("mujer".equals(sexo)) {
+                sueldo = sueldo + (sueldo * 2) / 100;
+                System.out.println("Tiene mas subida por ser mujer: " + sueldo);
+                if (hijos > 0) {
+                    sueldo = sueldo + (sueldo * hijos) / 100;
+                    System.out.println("Tiene mas subida por tener " + hijos + " hijos: " + sueldo);
+                }
+            }
+        }
+        
+        
 		sc.close();
 
 	}

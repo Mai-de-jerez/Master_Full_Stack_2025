@@ -209,6 +209,112 @@ public class CondicionalSwicht {
         System.out.println("\n--- RESULTADO ---");
         System.out.println("El resultado de la operación es: " + resultado);
         
+        
+        // Ejemplo 5: DADO UN NÚMERO DECIR SI ES DIVISIBLE POR 2, 3, 5, 7
+        int num = 274;
+
+        switch (num % 2) {
+            case 0:
+                System.out.println("Divisible por 2");
+                break;
+
+            default:
+                System.out.println("No divisible por 2");
+                break;
+        }
+
+        switch (num % 3) {
+            case 0:
+                System.out.println("Divisible por 3");
+                break;
+
+            default:
+                System.out.println("No divisible por 3");
+                break;
+        }
+
+        switch (num % 5) {
+            case 0:
+                System.out.println("Divisible por 5");
+                break;
+
+            default:
+                System.out.println("No divisible por 5");
+                break;
+        }
+
+        switch (num % 7) {
+            case 0:
+                System.out.println("Divisible por 7");
+                break;
+
+            default:
+                System.out.println("No divisible por 7");
+                break;
+        }
+        
+        // Ejemplo 6 : ESTADO CIVIL
+        char estado = 's';
+
+        switch (estado) {
+            case 's':
+                System.out.println("Soltero");
+                break;
+
+            case 'd':
+                System.out.println("Divorciado");
+                break;
+
+            case 'v':
+                System.out.println("Viudo");
+                break;
+
+            case 'c':
+                System.out.println("Casado");
+                break;
+        }
+        
+        // Ejemplo 7 : NÚMEROS ROMANOS
+        
+        char estado_civil = 'm';
+
+        switch (estado_civil) {
+            case 'I':
+            case 'i':
+                System.out.println("Uno");
+                break;
+
+            case 'V':
+            case 'v':
+                System.out.println("Cinco");
+                break;
+
+            case 'X':
+            case 'x':
+                System.out.println("Diez");
+                break;
+
+            case 'L':
+            case 'l':
+                System.out.println("Cincuenta");
+                break;
+
+            case 'C':
+            case 'c':
+                System.out.println("Cien");
+                break;
+
+            case 'D':
+            case 'd':
+                System.out.println("Quinientos");
+                break;
+
+            case 'M':
+            case 'm':
+                System.out.println("Mil");
+                break;
+        }
+        
         sc.close();
 		
 	}
