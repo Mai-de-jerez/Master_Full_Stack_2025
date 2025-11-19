@@ -28,7 +28,7 @@ public class Acceder_A_Elementos {
 		        {8,6,4,7,5,5,2,8},  
 		        {6,6,9,0,10,5,2,8},
 		        {5,0,6,7,8,5,2,9}  
-				  };
+				 };
 		
 		// Accedemos al primer elemento de la primera fila
 		System.out.println("Primer elemento de la primera fila: "+notasAlumnos[0][0]);
