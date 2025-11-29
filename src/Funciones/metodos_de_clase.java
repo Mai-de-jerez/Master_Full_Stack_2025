@@ -14,7 +14,7 @@ public class metodos_de_clase {
 	}
 	
 	/**
-	 * Función que mediante un aleatorio decide una ciudad
+	 * Médtodo que mediante un aleatorio decide una ciudad
 	 * @return retorna el nombre de la ciudad como String
 	 */
 	public static String dimeCiudad() {

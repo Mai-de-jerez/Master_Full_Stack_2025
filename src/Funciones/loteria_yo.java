@@ -183,9 +183,7 @@ public class loteria_yo {
 		default:
 			break;
 		} 
-         
-         
-		
+         	
 		}while(opcion != 4);
         
         System.out.println("Fin del programa");
