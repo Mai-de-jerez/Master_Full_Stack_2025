@@ -1,4 +1,4 @@
-package Ejercicios;
+package Ejercicios_POR_mi_cuenta;
 import java.util.Scanner;
 
 

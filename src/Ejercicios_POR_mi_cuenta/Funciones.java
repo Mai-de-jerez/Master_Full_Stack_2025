@@ -1,4 +1,4 @@
-package Ejercicios;
+package Ejercicios_POR_mi_cuenta;
 import java.util.Scanner;
 
 public class Funciones {
@@ -97,7 +97,7 @@ public class Funciones {
 
     } while(!esValida); // Repetir mientras 'esValida' sea false
     
-    System.out.println("\n*** ¡ÉXITO! Contraseña creada correctamente. ***");
+    System.out.println("\nContraseña creada correctamente.");
     
     scanner.close(); 
     
